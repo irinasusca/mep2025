@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'Impact';
+        src: local('Impact');
+        font-display: swap;
+      }
+    </style>
+    <title>Figma Website</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-bar-left">
+        <a href="#hero" class="nav-bar-text">Home</a>
+        <a href="#volunteer" class="nav-bar-text nav-bar-mobile-show">Volunteer</a>
+        <a href="#about" class="nav-bar-text nav-bar-desktop-show">About us</a>
+        <a href="#speakers" class="nav-bar-text nav-bar-desktop-show">Speakers</a>
+        <a href="#mep2024" class="nav-bar-text nav-bar-desktop-show">Mep 2024</a>
+        <a href="#sponsors" class="nav-bar-text nav-bar-desktop-show">Our Sponsors</a>
+      </div>
+      <div class="nav-bar-right">
+        <img src="assets/menu.png" alt="Menu" class="nav-bar-menu" tabindex="0" />
+        <div class="nav-bar-dropdown" id="mobileDropdown">
+          <a href="#about" class="mobile-title dropdown-link">About us</a>
+          <a href="#speakers" class="mobile-title dropdown-link">Speakers</a>
+          <a href="#team" class="mobile-title dropdown-link">Our team</a>
+          <a href="#mep2024" class="mobile-title dropdown-link">Mep 2024 Edition</a>
+          <a href="#sponsors" class="mobile-title dropdown-link">Our Sponsors</a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-texts">
+          <div class="title-font hero-title">MEP</div>
+          <div class="hero-transylvania">TRANSYLVANIA</div>
+          <div class="paragraph-text hero-paragraph">
+            The best Model European Parliment in Romania and Europe.
+          </div>
+          <button class="hero-action-btn">Join us now!</button>
+        </div>
+        <img src="assets/poza.png" alt="Poza" class="hero-poza-img" />
+        <div class="hero-image-container">
+          <img src="assets/flag.png" alt="Flag" class="hero-flag-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-left">
+          <h2 class="about-title">Sign up today</h2>
+          <p class="about-paragraph">
+                Join us for the most exciting Model European Parliament event in Romania! 
+                Experience a unique opportunity to engage with peers, learn about European politics, and make lasting memories.
+            </p>
+          <ul class="about-bullets">
+            <li>Everything is completely free</li>
+            <li>Participation diploma</li>
+            <li>Supplied food for the event</li>
+            <li>Wonderful experience</li>
+          </ul>
+          <div class="about-socials">
+            <a href="#" aria-label="Instagram"><img src="assets/Instagram.png" alt="Instagram" /></a>
+            <a href="#" aria-label="Facebook"><img src="assets/Facebook.png" alt="Facebook" /></a>
+            <a href="#" aria-label="Team"><img src="assets/gmail_groups.png" alt="Team" /></a>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="carousel">
+            <button class="carousel-arrow left"><img src="assets/Arrowleft.png" alt="Previous" /></button>
+            <img src="assets/carousel1.jpg" alt="Event photo" class="carousel-image" />
+            <button class="carousel-arrow right"><img src="assets/Arrowright.png" alt="Next" /></button>
+          </div>
+          <div class="carousel-dots">
+            <span class="carousel-dot active">1</span>
+            <span class="carousel-dot">2</span>
+            <span class="carousel-dot">3</span>
+            <span class="carousel-dot">4</span>
+            <span class="carousel-dot">5</span>
+          </div>
+          <div class="carousel-caption">
+            Transylvania MEP 2024 edition
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section END -->
+
+    <!-- Our Speakers Section -->
+    <section id="speakers" class="speakers-section">
+      <div class="speakers-container">
+        <h2 class="speakers-title">Our speakers in 2025</h2>
+        <div class="speakers-list">
+          <div class="speaker-card">
+            <img src="assets/speaker1.jpg" alt="Sonya Dang" class="speaker-img" />
+            <div class="speaker-name">Sonya Dang</div>
+            <div class="speaker-desc">Law School Graduate and professor</div>
+          </div>
+          <div class="speaker-card">
+            <img src="assets/speaker2.jpg" alt="Anton Lipan" class="speaker-img" />
+            <div class="speaker-name">Anton Lipan</div>
+            <div class="speaker-desc">Business owner and debate master</div>
+          </div>
+          <div class="speaker-card">
+            <img src="assets/speaker3.jpg" alt="Andreea Pop" class="speaker-img" />
+            <div class="speaker-name">Andreea Pop</div>
+            <div class="speaker-desc">European Parliament member since 2020</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Speakers Section END -->
+
+    <!-- Our Team Section -->
+    <section id="team" class="team-section">
+      <div class="team-container">
+        <h2 class="team-title">Our crew</h2>
+        <div class="team-list">
+          <div class="team-card">
+            <img src="assets/team1.jpg" alt="The organizing team" class="team-img" />
+            <div class="team-card-content">
+              <div class="team-name">The organizing team</div>
+              <div class="team-desc paragraph-text">
+                Our hard working team who organized the entire event from scratch
+              </div>
+              <a href="#" class="team-btn">
+                <span>Learn more about the organizing team</span>
+                <img src="assets/Arrowright.png" alt="Arrow right" class="team-btn-arrow" />
+              </a>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="assets/team2.jpg" alt="The academic team" class="team-img" />
+            <div class="team-card-content">
+              <div class="team-name">The academic team</div>
+              <div class="team-desc paragraph-text">
+                The brains of the event, the academic team prepared all the debate materials
+              </div>
+              <a href="#" class="team-btn">
+                <span>Learn more about the academic team</span>
+                <img src="assets/Arrowright.png" alt="Arrow right" class="team-btn-arrow" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Team Section END -->
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer-section">
+      <div class="volunteer-container">
+        <div class="volunteer-row">
+          <div class="volunteer-col volunteer-col-left">
+            <img src="assets/volunteer1.jpg" alt="Volunteer group" class="volunteer-img" />
+          </div>
+          <div class="volunteer-col volunteer-col-right">
+            <div class="volunteer-title">Apply as a volunteer...</div>
+            <div class="volunteer-desc">
+              Our event isn’t possible without our volunteers’ hard work! Join us today!
+            </div>
+            <a href="#" class="volunteer-btn">
+              Click here to apply!
+            </a>
+          </div>
+        </div>
+        <div class="volunteer-row">
+          <div class="volunteer-col volunteer-col-left">
+            <img src="assets/volunteer2.jpg" alt="Delegate" class="volunteer-img" />
+          </div>
+          <div class="volunteer-col volunteer-col-right">
+            <div class="volunteer-title">...or&nbsp; as a delegate</div>
+            <div class="volunteer-desc">
+              Become a part of our academic team and help us do something else!
+            </div>
+            <a href="#" class="volunteer-btn">
+              Click here to apply!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Volunteer Section END -->
+
+    <!-- MEP 2024 Section -->
+    <section id="mep2024" class="mep2024-section">
+      <div class="mep2024-container">
+        <h2 class="mep2024-title">The 2024 MEP event</h2>
+        <div class="mep2024-gallery">
+          <div class="mep2024-img-col">
+            <img src="assets/mep2024_1.jpg" alt="MEP 2024 photo 1" class="mep2024-img" />
+          </div>
+          <div class="mep2024-img-col">
+            <img src="assets/mep2024_2.jpg" alt="MEP 2024 photo 2" class="mep2024-img" />
+          </div>
+          <div class="mep2024-img-col">
+            <img src="assets/mep2024_3.jpg" alt="MEP 2024 photo 3" class="mep2024-img" />
+          </div>
+        </div>
+        <div class="mep2024-img-caption">
+          <span class="mep2024-img-heading">Sincai High School, Cluj Napoca</span>
+        </div>
+        <div class="mep2024-img-desc">
+          Our last edition was a great success, with well over 50 participants, and seven sponsors. We managed to make a great nonprofit and gathered a lot of attention on the media and etc.
+        </div>
+      </div>
+    </section>
+    <!-- MEP 2024 Section END -->
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors-section">
+      <div class="sponsors-content">
+        <div class="sponsors-title">Our sponsors</div>
+        <div class="sponsors-logos">
+          <img src="assets/lidl.png" alt="Lidl" class="sponsor-logo" />
+          <img src="assets/agro.png" alt="Agro" class="sponsor-logo" />
+          <img src="assets/crown.png" alt="Crown" class="sponsor-logo" />
+          <img src="assets/sincai.png" alt="Sincai" class="sponsor-logo" />
+        </div>
+        <div class="sponsors-desc">
+          The people who made this event possible.
+        </div>
+      </div>
+      <div class="sponsors-footer">
+        <div class="sponsors-footer-text">
+          Made by Irina Susca
+        </div>
+        <div class="sponsors-footer-socials">
+          <a href="#" aria-label="Team"><img src="assets/gmail_groups.png" alt="Team" /></a>
+          <a href="#" aria-label="Instagram"><img src="assets/Instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Simple dropdown toggle for mobile menu
+      const menuIcon = document.querySelector('.nav-bar-menu');
+      const dropdown = document.getElementById('mobileDropdown');
+      menuIcon.addEventListener('click', () => {
+        dropdown.classList.toggle('show');
+      });
+      menuIcon.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') dropdown.classList.toggle('show');
+      });
+      document.addEventListener('click', (e) => {
+        if (!menuIcon.contains(e.target) && !dropdown.contains(e.target)) {
+          dropdown.classList.remove('show');
+        }
+      });
+      // Simple carousel logic (replace with your own images)
+      const carouselImages = [
+        'assets/carousel1.jpg',
+        'assets/carousel2.jpg',
+        'assets/carousel3.jpg',
+        'assets/carousel4.jpg',
+        'assets/carousel5.jpg'
+      ];
+      let carouselIndex = 0;
+      const carouselImg = document.querySelector('.carousel-image');
+      const dots = document.querySelectorAll('.carousel-dot');
+      document.querySelector('.carousel-arrow.left').onclick = () => {
+        carouselIndex = (carouselIndex - 1 + carouselImages.length) % carouselImages.length;
+        updateCarousel();
+      };
+      document.querySelector('.carousel-arrow.right').onclick = () => {
+        carouselIndex = (carouselIndex + 1) % carouselImages.length;
+        updateCarousel();
+      };
+      function updateCarousel() {
+        carouselImg.src = carouselImages[carouselIndex];
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === carouselIndex));
+      }
+      dots.forEach((dot, i) => {
+        dot.onclick = () => {
+          carouselIndex = i;
+          updateCarousel();
+        }
+      });
+      updateCarousel();
+    </script>
+  </body>
+</html>
+</html>
+    </script>
+  </body>
+</html>
+</html>
+</html>
